@@ -10,25 +10,30 @@
   <body>
     <h1>Accordéon mémorisant par un nombre l'élément ouvert</h1>
 
-    <div x-data="{ openSection: 1 }" class="accordeon">
-      <section>
-        <button @click="openSection = !openSection">bouton 1</button>
-        <p x-show="openSection" x-transition.scale.80>
+    
+      <div class="accordion" x-data="{ openSection: 1 }">
+        
+     <section>
+        <button @click="openSection = 1" >bouton 1</button>
+        <p x-show="openSection === 1" x-transition.scale.80s>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore expedita id nesciunt enim, cupiditate ut sapiente harum placeat nulla mollitia soluta laboriosam eum adipisci non quam, a sint quo!
         </p>
       </section>
+      
       <section>
-        <button @click="openSection = !openSection">bouton 2</button>
-        <p x-show="openSection" x-transition.scale.80>
+        <button @click="openSection = (openSection === 0) ? 1 : 0">bouton 2</button>
+        <p x-show="openSection === 1" x-transition.scale.80s>
           Veniam veritatis autem nostrum distinctio ipsum maxime itaque cum laudantium voluptas quasi molestias, cupiditate, voluptatum perferendis placeat dolorum amet qui inventore facere. Vitae, quidem. At nostrum ut nulla numquam cupiditate.
         </p>
       </section>
+      
       <section>
-        <button @click="openSection = !openSection">bouton 3</button>
-        <p x-show="openSection" x-transition.scale.80>
+        <button @click="openSection = (openSection === 0) ? 1 : 0">bouton 3</button>
+        <p x-show="openSection === 1" x-transition.scale.80s>
           eatae adipisci velit mollitia est ut sunt consequuntur? Quia eveniet cupiditate dolor illum, iusto hic incidunt rem dolorem minus exercitationem voluptas accusamus temporibus similique non, distinctio eligendi ab consequuntur beatae?
         </p>
       </section>
+      
     </div>
 </body>
 
