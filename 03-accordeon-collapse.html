@@ -11,10 +11,10 @@
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
 
-    <div class="accordeon" x-data="{menuIsOpen: 0}">
+    <div class="accordeon" x-data="{IsOpen: 0}">
     <section>
-      <button @click="menuIsOpen = (menuIsOpen === 1)?0:1">bouton 1</button>
-      <p x-show="menuIsOpen === 1" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nisi earum dolor vitae odio at esse hic? Velit, iusto ut molestiae quasi quaerat totam debitis officia ad perspiciatis repellat eligendi.</p>
+      <button @click="IsOpen = (IsOpen === 1)?0:1">bouton 1</button>
+      <p x-show="IsOpen === 1" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nisi earum dolor vitae odio at esse hic? Velit, iusto ut molestiae quasi quaerat totam debitis officia ad perspiciatis repellat eligendi.</p>
     </section>
 
         <button @click = "IsOpen=2">bouton 2</button>
