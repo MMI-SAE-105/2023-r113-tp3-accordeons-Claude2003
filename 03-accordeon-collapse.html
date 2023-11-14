@@ -13,7 +13,7 @@
 
     <div class="accordeon" x-data="{menuIsOpen: 0}">
     <section>
-      <button @click="menuIsOpen = (menuIsOpen === 1)">bouton 1</button>
+      <button @click="menuIsOpen = (menuIsOpen === 1)?0:1">bouton 1</button>
       <p x-show="menuIsOpen === 1" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nisi earum dolor vitae odio at esse hic? Velit, iusto ut molestiae quasi quaerat totam debitis officia ad perspiciatis repellat eligendi.</p>
     </section>
 
