@@ -11,8 +11,8 @@
   <body>
     <h1>Accordéon horizontal</h1>
 
-    <ul id="accordeon">
-      <li>
+    <ul id="accordeon" x-data="{IsOpen: 1}">
+      <li :class="{'actif': IsOpen === 1}" @click="IsOpen = 1">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -21,7 +21,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{'actif': IsOpen === 2}" @click="IsOpen = 2">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
@@ -30,7 +30,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{'actif': IsOpen === 3}" @click="IsOpen = 3">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
