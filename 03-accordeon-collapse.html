@@ -22,8 +22,8 @@
       </section>
       <section>
         
-        <button @click = "IsOpen=3">bouton 3</button>
-        <p>Id cupiditate ipsum possimus impedit, enim, veniam exercitationem earum sint consequatur ex ducimus dolorem neque asperiores harum omnis ad sunt ipsa animi voluptatum? Sunt ab reiciendis, unde voluptas error quis?</p>
+        <button @click="IsOpen = (IsOpen === 3)?0:3" >bouton 3</button>
+        <p x-show="IsOpen === 3" x-collapse>Id cupiditate ipsum possimus impedit, enim, veniam exercitationem earum sint consequatur ex ducimus dolorem neque asperiores harum omnis ad sunt ipsa animi voluptatum? Sunt ab reiciendis, unde voluptas error quis?</p>
       </section>
     </div>
   </body>
