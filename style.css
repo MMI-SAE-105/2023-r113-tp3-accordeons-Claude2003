@@ -1,8 +1,7 @@
 #accordeon {
-    background-color: brown;
-    /* pour que les éléments soient alignés horizontalement */
-    /* pour éviter les marges par défaut */
-    /* pour éviter les "padding" par défaut */
+    justify-self: auto;
+    border-style: none;
+    padding: 0%;
 }
 
 #accordeon li {
