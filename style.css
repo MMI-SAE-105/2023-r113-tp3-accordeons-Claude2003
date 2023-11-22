@@ -60,3 +60,40 @@
   .enfant.actif {
     opacity: 1;
   }
+
+  #onglets [role="tab"] {
+    cursor: pointer;
+    padding: 5px;
+    list-style: none;
+    border: 2px solid #fa055b;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#onglets [role="tab"]:hover {
+    background-color: rgb(221, 160, 175);
+}
+
+#onglets [role="tab"].actifs {
+    background-color: palevioletred;
+    color: rgb(109, 37, 37);
+    
+}
+
+#onglets [role="tabpanel"] {
+    padding: 0;
+    opacity: 1;
+    position: relative;
+}
+
+h1{
+    color: rgb(202, 13, 76);
+}
+
+p{
+    color: #e9437d;
+}
+
+li{
+    color: #e9437d;
+}
