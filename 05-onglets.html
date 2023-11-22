@@ -8,16 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
   </head>
-  <body>
+  <body x-data="{ IsOpen : 1}">
+    
     <h1>Onglets</h1>
 
-    <div id="onglets" x-data="{ IsOpen : 1,}">
-
-      <ul role="tablist">
-        <li role="tab">Onglet 1</li>
-        <li role="tab">Onglet 2</li>
-        <li role="tab">Onglet 3</li>
-      </ul>
+      <div id="onglets">
+        <ul role="tablist">
+          <li :class="{ 'actif':IsOpen === 1}" role="tab" @click="IsOpen = 1">Onglet 1</li>
+          <li :class="{'actif':IsOpen === 2}" role="tab" @click="IsOpen = 2">Onglet 2</li>
+          <li :class="{'actif':IsOpen === 3}" role="tab" @click="IsOpen = 3">Onglet 3</li>
+        </ul>
+      </div>
 
       <div  class="parent">
         <div class="enfant" role="tabpanel"  :class="{'actif': IsOpen === 1}">
